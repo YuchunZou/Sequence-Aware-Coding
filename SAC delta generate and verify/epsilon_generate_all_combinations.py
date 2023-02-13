@@ -4,6 +4,12 @@ import time
 import sys
 from sympy.utilities.iterables import partitions
 
+
+# epsilon = 4
+# w = 8  #number of workers
+# p = 4  #number of paritions
+# t = 4  #parity rows
+
 def GenerateAllOriginalParityCombinations(epsilon, w, p, t):
     # https://docs.sympy.org/latest/modules/utilities/iterables.html
     # m: limits number of parts in partition
@@ -48,10 +54,6 @@ def GenerateAllOriginalParityCombinations(epsilon, w, p, t):
         NumOfOriginalWorkers.append(i)
     return AllCombinations
 
-# epsilon = 4
-# w = 8  #number of workers
-# p = 4  #number of paritions
-# t = 4  #parity rows
 # # for OriginalItemCombination in partitions(epsilon, m = p, k = 2):
 # #     print("Keys")
 # #     print(OriginalItemCombination.keys())
